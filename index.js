@@ -39,6 +39,7 @@ async function run() {
         const bookingsCollection = client.db('doctorsPortal').collection('bookings')
         const usersCollection = client.db('doctorsPortal').collection('users')
         const doctorsCollection = client.db('doctorsPortal').collection('doctors')
+        const doctorsCollectio = client.db('doctorsPortal').collection('doctor')
 
         const verifyAdmin = async(req, res, next) => {
             const decodedEmail = req.decoded.email
